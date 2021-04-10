@@ -1,0 +1,24 @@
+{
+  "name": "looking-glass-payload-tester",
+  "version": "1.0.0",
+  "description": "action to quickly test Looking Glass behavior when altering payload data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubtraining/looking-glass-payload-tester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubtraining/looking-glass-payload-tester/issues"
+  },
+  "homepage": "https://github.com/githubtraining/looking-glass-payload-tester#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  }
+}

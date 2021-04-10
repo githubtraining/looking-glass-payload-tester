@@ -1,0 +1,33 @@
+name: "Looking Glass Payload Tester"
+author: mattdavis0351
+description: "allows dynamic manual input to create payloads to help authors integrate with Looking Glass"
+inputs:
+  filename:
+    description: "string for a filename if your payload needs one"
+    required: true
+  isCorrect:
+    description: "a boolean value for the isCorrect field"
+    required: true
+  level:
+    description: "string value of a supported Looking Glass level"
+    required: true
+  display_type:
+    description: "string value of a supported Looking Glass level"
+    required: true
+  msg:
+    description: "string value of a message if your payload has one, can be an empty string"
+    required: true
+  error_expected:
+    description: "string value of the error.expected field of a Looking Glass payload"
+    required: true
+  error_got:
+    description: "string value of the error.got field of a Looking Glass payload"
+    required: true
+
+outputs:
+  reports:
+    description: "an object containing the values supplied as input to be used as a feedback payload for Looking Glass"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
