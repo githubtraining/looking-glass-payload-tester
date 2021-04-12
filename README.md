@@ -56,12 +56,18 @@ jobs:
 ```
 
 1. Click the actions tab of your repository
-   ![image](https://user-images.githubusercontent.com/38021615/114465997-bc393000-9b9c-11eb-984b-77b71063a897.png)
-1. Select the `Looking Glass Payload Tester` from the list of configured workflows (if you changed the contents of the example file above your's may be named differently)
-   ![image](https://user-images.githubusercontent.com/38021615/114466056-cc510f80-9b9c-11eb-8df6-9002822b1cec.png)
-1. Click the `Run workflow` button on the upper right corner of the middle section of your screen and supply your input values to create a payload Looking Glass can understand
-   ![image](https://user-images.githubusercontent.com/38021615/114465906-a0358e80-9b9c-11eb-9e00-26c21f0de76e.png)
-1. Click the green `Run workflow` button to execute the workflow
-1. Check your actions logs and other payload `diaplay_types` for Looking Glass feedback :tada:
+
+![image](https://user-images.githubusercontent.com/38021615/114465997-bc393000-9b9c-11eb-984b-77b71063a897.png)
+
+2. Select the `Looking Glass Payload Tester` from the list of configured workflows (if you changed the contents of the example file above your's may be named differently)
+
+![image](https://user-images.githubusercontent.com/38021615/114466056-cc510f80-9b9c-11eb-8df6-9002822b1cec.png)
+
+3. Click the `Run workflow` button on the upper right corner of the middle section of your screen and supply your input values to create a payload Looking Glass can understand
+
+![image](https://user-images.githubusercontent.com/38021615/114465906-a0358e80-9b9c-11eb-9e00-26c21f0de76e.png)
+
+4. Click the green `Run workflow` button to execute the workflow
+5. Check your actions logs and other payload `diaplay_types` for Looking Glass feedback :tada:
 
 **It is useful to enable actions debugging while working with Looking Glass as an author. To do so set the proper repository secrets!**
