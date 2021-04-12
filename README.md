@@ -38,7 +38,7 @@ jobs:
   create_payload:
     runs-on: ubuntu-latest
     steps:
-    - uses: githubtraining/looking-glass-payload-tester@main
+    - uses: githubtraining/looking-glass-payload-tester@v1.0
       id: events
       with:
         filename: ${{ github.event.inputs.filename }}
@@ -49,7 +49,7 @@ jobs:
         error_expected: ${{ github.event.inputs.error_expected }}
         error_got: ${{ github.event.inputs.error_got }}
         
-    - uses: githubtraining/looking-glass-action@implement-failure
+    - uses: githubtraining/looking-glass-action@v0.1.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         feedback: ${{ steps.events.outputs.reports }}
