@@ -39,8 +39,8 @@ Configuration is easy!
        runs-on: ubuntu-latest
        steps:
        - uses: githubtraining/looking-glass-payload-tester@v1.0
-       id: events
-       with:
+         id: events
+         with:
            filename: ${{ github.event.inputs.filename }}
            isCorrect: ${{ github.event.inputs.is_correct }}
            level: ${{ github.event.inputs.level }}
@@ -50,7 +50,7 @@ Configuration is easy!
            error_got: ${{ github.event.inputs.error_got }}
 
        - uses: githubtraining/looking-glass-action@v0.1
-       with:
+         with:
            github-token: ${{ secrets.GITHUB_TOKEN }}
            feedback: ${{ steps.events.outputs.reports }}
    ```
