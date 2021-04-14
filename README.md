@@ -1,6 +1,6 @@
 # looking-glass-payload-tester
 
-action to quickly test Looking Glass behavior when altering payload data
+Action to quickly test Looking Glass behavior when altering payload data
 
 Configuration is easy!
 
@@ -38,21 +38,21 @@ jobs:
   create_payload:
     runs-on: ubuntu-latest
     steps:
-    - uses: githubtraining/looking-glass-payload-tester@v1.0
-      id: events
-      with:
-        filename: ${{ github.event.inputs.filename }}
-        isCorrect: ${{ github.event.inputs.is_correct }}
-        level: ${{ github.event.inputs.level }}
-        display_type: ${{ github.event.inputs.display_type }}
-        msg: ${{ github.event.inputs.msg }}
-        error_expected: ${{ github.event.inputs.error_expected }}
-        error_got: ${{ github.event.inputs.error_got }}
-        
-    - uses: githubtraining/looking-glass-action@v0.1.0
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        feedback: ${{ steps.events.outputs.reports }}
+      - uses: githubtraining/looking-glass-payload-tester@v1.0
+        id: events
+        with:
+          filename: ${{ github.event.inputs.filename }}
+          isCorrect: ${{ github.event.inputs.is_correct }}
+          level: ${{ github.event.inputs.level }}
+          display_type: ${{ github.event.inputs.display_type }}
+          msg: ${{ github.event.inputs.msg }}
+          error_expected: ${{ github.event.inputs.error_expected }}
+          error_got: ${{ github.event.inputs.error_got }}
+
+      - uses: githubtraining/looking-glass-action@v0.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          feedback: ${{ steps.events.outputs.reports }}
 ```
 
 1. Click the actions tab of your repository
