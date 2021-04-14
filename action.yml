@@ -31,3 +31,7 @@ outputs:
 runs:
   using: "node12"
   main: "dist/index.js"
+  
+branding:
+  icon: crosshair
+  color: gray-dark
